@@ -4,13 +4,22 @@
       "/content/test/:/",
       "/content/test/configuration:/.helix/config.json",
       "/content/test/metadata:/metadata.json",
-      "/content/test/redirects:/redirects"
+      "/content/test/index/spreadsheet:/products.json",
+      "/content/test/index/tag-configuration:/tag-configuration.json",
+      "/content/dam/test/:/assets/"
     ],
     "includes": [
-      "/content/test/"
-    ],
-    "excludes": [
-      "/content/test/drafts/"
+      "/content/test/",
+      "/content/dam/test/"
     ]
+  },
+  "xwalk": {
+    "content-fragment-overlay": {
+      "/content/dam/test/**": {
+        "includes": [
+          "/conf/test/settings/dam/cfm/models/product-info"
+        ]
+      }
+    }
   }
 }
