@@ -1,0 +1,16 @@
+{
+  "paths": {
+    "mappings": [
+      "/content/test/:/",
+      "/content/test/configuration:/.helix/config.json",
+      "/content/test/metadata:/metadata.json",
+      "/content/test/redirects:/redirects"
+    ],
+    "includes": [
+      "/content/test/"
+    ],
+    "excludes": [
+      "/content/test/drafts/"
+    ]
+  }
+}
